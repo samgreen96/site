@@ -1,0 +1,38 @@
+- role: Senior Developer
+  company: Consultation Manager
+  start: March 2023
+  end: Present
+  points: 
+    - Began splitting my time between Social Pinpoint and a sister company called Consultation Manager, which is a Stakeholder Relationship Management System
+    - Learning a new tech-stack including .NET, React and Angular (with typescript) and MS SQL
+    - Providing leadership and guidance to a growing team that is working to implement a new front-end and API layer within a legacy system
+    - Identifying and addressing technical debt. Helping to fill knowledge gaps and map out the inner workings of the existing system
+
+- role: Lead Developer
+  company: Social Pinpoint
+  start: November 2020
+  end: Present
+  points:
+    - Transitioned the product from active development to maintenance
+    - Grew the team from 4 developers to a team of 10 across multiple disciplines and regions (Australia, Manilla and US)
+    - Increased automated test suite by over 100%
+    - Created and implemented a paid internship program
+    - Mentored junior staff and work placement students
+    - Implemented a number of internal process changes to increase developer productivity, decrease support requirements, and accelerate career development across the team
+    - Oversaw and facilitated major product upgrades including Rails upgrades, Postgres upgrades, change in front-end technology and implementation of Horizontal Scaling
+    - Continued development of product features both individually and as part of a team
+    - Organised and conducted all agile ceremonies
+    - Main liaison for Custom Success, including implementing a tiered support system and triaging process as an acting Product Owner
+    - Automated time-consuming manual process to reduce overall support requirements
+
+- role: Software Developer
+  company: Social Pinpoint
+  start: July 2018
+  end: November 2020
+  points: 
+    - Developed and maintained a Community Engagement Saas platform as part of a small, high-performing team
+    - Worked on projects across the entire stack, including end-to-end features, infrastructure projects and DevOps
+    - Experience building and maintaining interactive mapping technologies and survey tools
+    - Created a number of integrations with third party tools such as Hubspot, Jira and AWS 
+    - Implemented a generic SSO module that is capable of communicating with a number of IdP's such as Google, Okta and Azure
+    - Created a collection of Custom Web Components that could be rendered on any website
