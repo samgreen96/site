@@ -1,0 +1,16 @@
+- name: Dietree
+  type: Personal
+  link: https://dietree.com
+  description: A website for finding restaurants that cater to specific dietary requirements, that allows
+    these restaurants to get in front of their intended market easier. The site tracks useful analytics to
+    help restaurants make decisions on what dietary requirements they might be missing and to see where their
+    customers are coming from.
+  image:
+
+- name: Ruby AU - Slack Event Handler
+  type: Open Source Contibution
+  link: https://github.com/rubyaustralia/ruby_au/pull/200
+  description: Created an integration for the Ruby Australia website and the Slack Events API - which
+    allows for users that join the Ruby AU Slack channel to be automatically invited to become a member
+    of the website. This integration also provides extensibility to support other event types easily.
+  image: 

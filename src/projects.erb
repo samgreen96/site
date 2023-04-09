@@ -2,3 +2,11 @@
 layout: default
 title: Projects
 ---
+<section>
+  <h2>Projects</h2>
+  <% site.data.projects.each do |project| %>
+    <h3><%= project.name %> (<%= project.type %>)</h3>
+    <%= link_to "Link", project.link, target: '_blank' %>
+    <p><%= project.description %></p>
+  <% end %>
+</section>
