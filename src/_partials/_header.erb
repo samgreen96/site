@@ -1,8 +1,11 @@
+<% 
+links = [["About", 'about.erb'], ["CV", 'cv.erb'], ['Projects', 'projects.erb']]
+%>
 <header>
   <h1><%= link_to "Sam Green", "index.erb" %></h1>
   <nav>
-    <%= link_to "About", "about.erb" %>
-    <%= link_to "CV", "cv.erb" %>
-    <%= link_to "Projects", "projects.erb" %>
+    <% links.each do |title, path| %>
+      <%= link_to title, path, class: url_for(path).eql?(view.resource.destination.relative_url) ? 'active' : nil %>
+    <% end %>
   </nav>
 </header>
