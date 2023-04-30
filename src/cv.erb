@@ -2,44 +2,47 @@
 title: Curiculum Vitae
 layout: default
 ---
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <ul>
-    <% site.data.technical_skills.each do |skill| %>
-      <li><%= skill %></li>
+<button class="float" onclick="window.cvToPDF()">Save</button>
+<div id="cv">
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <% site.data.technical_skills.each do |skill| %>
+        <li><%= skill %></li>
+      <% end %>
+    </ul>
+  </section>
+  <hr>
+  <section>
+    <h2>Experience</h2>
+    <% site.data.experience.each do |exp| %>
+      <section class="experience">
+        <div class="header">
+          <h3><%= exp.role %> - <%= exp.company %></h3>
+          <span><%= exp.start %> - <%= exp.end %></span>
+        </div>
+        <ul>
+          <% exp.points&.each do |point| %>
+            <li><%= point %></li>
+          <% end %>
+        </ul>
+        <div class="description">
+          <%= exp.description %>
+        </div>
+      </section>
     <% end %>
-  </ul>
-</section>
-<hr>
-<section>
-  <h2>Experience</h2>
-  <% site.data.experience.each do |exp| %>
-    <section class="experience">
-      <div class="header">
-        <h3><%= exp.role %> - <%= exp.company %></h3>
-        <span><%= exp.start %> - <%= exp.end %></span>
-      </div>
-      <ul>
-        <% exp.points&.each do |point| %>
-          <li><%= point %></li>
-        <% end %>
-      </ul>
-      <div class="description">
-        <%= exp.description %>
-      </div>
-    </section>
-  <% end %>
-</section>
-<hr>
-<section>
-  <h2>Education</h2>
-  <% site.data.education.each do |education| %>
-    <section class="education">
-      <div class="header">
-        <h3><%= education.institution %></h3>
-        <span><%= education.start %> - <%= education.end %></span>
-      </div>
-      <p><%= education.title %></p>
-    </section>
-  <% end %>
-</section>
+  </section>
+  <hr>
+  <section>
+    <h2>Education</h2>
+    <% site.data.education.each do |education| %>
+      <section class="education">
+        <div class="header">
+          <h3><%= education.institution %></h3>
+          <span><%= education.start %> - <%= education.end %></span>
+        </div>
+        <p><%= education.title %></p>
+      </section>
+    <% end %>
+  </section>
+<div>

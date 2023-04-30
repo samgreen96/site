@@ -5,14 +5,17 @@
   --heading-color: #405349;
   --action-color: #405349;
   --highlight-color: #9974dd;
+  --highlight-color-dark: #8558d6;
 
   --primary: #6A7B76;
 
-  --main-max-width: 1200px;
+  --main-max-width: 900px;
+  --header-height: 90px;
 }
 
 html {
   font-size: 20px;
+  overflow: hidden;
 }
 
 body {
@@ -26,13 +29,13 @@ body {
 
 header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   justify-content: space-between;
-  padding: 1.2rem;
-  position: sticky;
-  top: 0;
   background: var(--body-color);
   box-shadow: 0 0 10px;
+  height: var(--header-height);
 }
 
 header > h1 > a, header > nav > a {
@@ -57,11 +60,15 @@ header > h1 {
 }
 
 main {
+  overflow-y: auto;
+  height: calc(100vh - var(--header-height));
+}
+
+main > .content {
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--main-max-width);
-  width: 100%;
   padding: 2rem;
+  max-width: var(--main-max-width);
 }
 
 #skills > ul {
@@ -95,7 +102,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 h1 > a {
@@ -113,4 +120,39 @@ hr {
   width: 95%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+ul {
+  font-size: 1rem;
+}
+
+button {
+  background: var(--highlight-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: var(--highlight-color-dark);
+}
+
+.float {
+  float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --header-height: 120px;
+  }
+
+  html {
+    font-size: 32px;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
 }

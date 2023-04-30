@@ -1,4 +1,10 @@
 ---
 layout: default
-title: Home
+title: About
 ---
+<section>
+  <h2>About me</h2>
+  <% site.data.about.each do |paragraph| %>
+    <p><%= paragraph %></p>
+  <% end %>
+</section>

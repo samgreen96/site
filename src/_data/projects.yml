@@ -4,8 +4,14 @@
   description: A website for finding restaurants that cater to specific dietary requirements, that allows
     these restaurants to get in front of their intended market easier. The site tracks useful analytics to
     help restaurants make decisions on what dietary requirements they might be missing and to see where their
-    customers are coming from.
+    customers are coming from. The application is a Rails 7 Monolith that levereges Hotwire (Turbo and Stimulus) 
+    and Tailwind CSS for the front-end. The repo is currently private but can be shared on request.
   image:
+
+- name: This website 😎
+  type: Personal
+  link: 'https://github.com/samgreen96/site'
+  description: Yes, this website! This site is built using Bridgetown, which is a static site generator built on Ruby.
 
 - name: Ruby AU - Slack Event Handler
   type: Open Source Contibution
